@@ -1,0 +1,47 @@
+@use 'variable';
+
+.input{
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_minus{
+         width: 25px;
+         height: 100%;
+         padding: 25px 5px;
+    }
+    &_quantity{
+        width: 100%;
+        border: none;
+        font-size: 1.2em;
+        font-weight: 700;
+        font-family: variable.$Font;
+        text-align: center;
+        outline: none;
+    }
+    &_plus{
+            width: 25px;
+            height: 100%;
+            padding: 19px 3px;
+    }
+}
+
+.details{
+    &_button{
+        background-color: variable.$Orange;
+        width: 100%;
+        height: 58px;
+        color: variable.$White;
+        border-radius: 8px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        &:hover{
+            cursor: pointer;
+            opacity: 0.6;
+        }
+    }
+
+}

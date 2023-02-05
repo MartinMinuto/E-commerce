@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
+
+<body>
+
+  <main class="container_main">
+
+    <header class="hero">
+
+      <div class="hero_logos">
+         
+        <img class="hero_menu" src="./images/icon-menu.svg" alt="menu-icon">
+
+        <img class="hero_logo" src="./images/logo.svg" alt="logo-icon">
+
+        <nav class="nav">
+
+          <ul class="nav_iteams">
+
+            <li><a class="nav_link" href="">Collections</a></li>
+            <li><a class="nav_link" href="">Men</a></li>
+            <li><a class="nav_link" href="">Women</a></li>
+            <li><a class="nav_link" href="">About</a></li>
+            <li><a class="nav_link" href="">Contact</a></li>
+
+          </ul>
+
+        </nav>
+
+      </div>  
+
+        <div class="modal_background">
+
+          <nav class="modal_nav">
+
+            <img class="modal_close" src="./images/icon-close.svg" alt="icon-close">
+
+            <ul class="modal_nav_iteams">
+
+              <li><a class="modal_nav_link" href="">Collections</a></li>
+              <li><a class="modal_nav_link" href="">Men</a></li>
+              <li><a class="modal_nav_link" href="">Women</a></li>
+              <li><a class="modal_nav_link" href="">About</a></li>
+              <li><a class="modal_nav_link" href="">Contact</a></li>
+
+            </ul>
+
+          </nav>
+
+        </div>
+
+        <div class="hero_card_avatar">
+
+          <div class="hero_icon">
+
+            <div class="hero_icon--notice">0</div>
+
+            <img class="hero_icon" src="./images/icon-cart.svg" alt="icon">
+
+          </div>
+
+           <img class="hero_avatar" src="./images/image-avatar.png" alt="avatar">
+
+        </div>
+
+    </header>
+
+
+    <section class="content">
+
+      <article class="gallery">
+
+        <div class="gallery_image_container">
+              
+          <img class="gallery_previus" src="./images/icon-previous.svg" alt="previus">
+
+          <img class="gallery_next" src="./images/icon-next.svg" alt="next">
+
+        </div>
+
+        <div class="gallery_images">
+
+         <img id="1" class="gallery_image" src="./images/image-product-1-thumbnail.jpg" alt="images">
+
+         <img id="2" class="gallery_image" src="./images/image-product-2-thumbnail.jpg" alt="images">
+
+         <img id="3" class="gallery_image" src="./images/image-product-3-thumbnail.jpg" alt="images">
+
+         <img id="4" class="gallery_image" src="./images/image-product-4-thumbnail.jpg" alt="images">
+
+        </div>
+
+      </article>
+
+      <article class="details">
+
+          <h2 class="details_company">Sneaker Company</h2>
+
+          <h3 class="details_title">Fall Limited Edition Sneakers</h3>
+
+          <p class="details_description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they`ll withstand everything the weather can offer.</p>
+
+          <div class="details_prices">
+            
+            <p class="details_now">$125.00<span class="details_discount">50%</span></p>
+  
+            <p class="details_before">$250.00</p>
+
+          </div>
+
+          <div class="details_product_quantity">
+
+            <div class="input">
+
+              <img class="input_minus" src="./images/icon-minus.svg" alt="icon-minus">
+
+              <input class="input_quantity" type="text" value="0">
+
+              <img class="input_plus" src="./images/icon-plus.svg" alt="icon-plus">
+
+            </div>
+
+            <button class="details_button"><img src="./images/ionc-cart-white.svg" class="details_img" alt="card"> Add to cart</button>
+
+          </div>
+          
+      </article>
+
+    </section>
+
+    <!--card-modal-->
+
+    <div class="card_modal">
+
+      <p class="card_modal_title">Card</p>
+
+      <div class="card_modal_container">
+           
+        <div class="card_modal_detail_container">
+
+            <img class="card_modal_img" src="./images/image-product-1-thumbnail.jpg" alt="product">
+
+            <div>
+                
+            <p class="card_modal_paragraph">Fall Limited Edition</p>
+
+            <p class="card_modal_price">$125 x3<span> $375</span></p>
+
+            </div>
+
+            <img class="card_modal_delete" src="./images/icon-delete.svg" alt="delete">
+
+        </div>
+
+        <button class="card_modal_button">Checkout</button>
+
+      </div>
+
+    </div>
+
+    <!--gallery-modal-->
+
+    <div class="modal_gallery_background">
+
+      <article class="modal_gallery">
+         
+        <img class="modal_gallery_close" src="./images/icon-close.svg" alt="close">
+
+        <div class="modal_gallery_imagen_container">
+              
+          <img class="modal_gallery_previus" src="./images/icon-previous.svg" alt="previus">
+
+          <img class="modal_gallery_next" src="./images/icon-next.svg" alt="next">
+
+        </div>
+
+        <div class="modal_gallery_images">
+
+         <img id="m1" class="modal_gallery_image" src="./images/image-product-1-thumbnail.jpg" alt="images">
+
+         <img id="m2" class="modal_gallery_image" src="./images/image-product-2-thumbnail.jpg" alt="images">
+
+         <img id="m3" class="modal_gallery_image" src="./images/image-product-3-thumbnail.jpg" alt="images">
+
+         <img id="m4" class="modal_gallery_image" src="./images/image-product-4-thumbnail.jpg" alt="images">
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <div class="attribution">
+    Coded by <a href="https://github.com/MartinMinuto" target="_blank">Martin Minuto</a>.
+  </div>
+
+  <script src="./js/script.js"></script>
+
+</body>
+</html>

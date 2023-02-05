@@ -1,0 +1,72 @@
+@use 'variable';
+
+.gallery{
+   &_image_container{
+      background-image: url("../images/image-product-1.jpg");
+      height: 300px;
+      width: 100%;
+      background-size: cover;
+      padding-top: 5px;
+      &:hover{
+        cursor: pointer;
+      }
+   }
+   &_previus{
+      background-color: variable.$White;
+      width: 40px;
+      height: 40px;
+      padding: 12px;
+      border-radius: 50%;
+      position: absolute;
+      top: 180px;
+      left: 5px;
+      &:hover{
+        cursor: pointer;
+      }
+      @media (min-width:1024px){
+         display: none;
+      }
+   }
+   &_next{
+    background-color: variable.$White;
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 180px;
+    right: 5px;
+    &:hover{
+      cursor: pointer;
+    }
+    @media (min-width:1024px){
+        display: none;
+    }
+   }
+   &_images{
+     display: none;
+     @media (min-width:1024px){
+        display: flex;
+        justify-content: space-between;
+     }  
+   }
+   &_image{
+      width: 90px;
+      border-radius: 16px;
+      border: 2px solid variable.$Orange;
+      &:hover{
+        cursor: pointer;
+        border: 2px solid variable.$Orange;
+        transform: translateY(-8px);
+        transition: 0.5s;
+      }
+   }
+   @media (min-width:1024px){
+       width: 446px;
+      &_image_container{
+        border-radius: 16px;
+        height: 446px;
+        margin-bottom: 32px;
+     }
+   }
+}

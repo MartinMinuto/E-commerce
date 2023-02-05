@@ -1,0 +1,61 @@
+@use 'variable';
+@use 'header';
+@use 'modalnav';
+@use 'nav';
+@use 'gallery';
+@use 'details';
+@use 'input';
+@use 'cart-modal';
+@use 'modal-gallery';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: variable.$Font;
+}
+
+.container-main{
+  width: 375px;
+  border: 1px solid black;
+  margin: auto;
+  position: relative;
+  @media (min-width:1024px){
+    width: 1024px;
+  }
+}
+
+.content{
+    @media (min-width:1024px){
+        display: flex;
+        padding: 90px 50px;
+        gap: 124px;
+    }
+    @media (min-width:1440px){
+      justify-content: space-around;
+      padding: 100px 70px;
+      gap: 50px;
+    }
+}
+
+.attribution{
+ font-size: 11px;
+ text-align: center; 
+ & a{
+  color: variable.$Orange;
+ }
+}
+
+.show{
+  display: block;
+}
+
+.card_empty{
+  text-align: center;
+  color: variable.$Black;
+  font-size: 1.2em;
+  padding-top: 40px;
+}

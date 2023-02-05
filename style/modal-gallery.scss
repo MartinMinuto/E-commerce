@@ -1,0 +1,86 @@
+@use 'variable';
+
+.modal_gallery{
+    width: 446px;
+    &_background{
+        background-color: variable.$Black-modal;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 103vh;
+        z-index: 1;
+        place-content: center;
+        display: none; 
+    }
+    &_imagen_container{
+        background-image: url(../images/image-product-1.jpg);
+        height: 446px;
+        background-size: cover;
+        border-radius: 16px;
+        margin-bottom: 36px;
+        @media (min-width:1440px){
+            height: 600px;
+        }
+    }
+    &_images{
+        display: flex;
+        justify-content: space-between;
+    }
+    &_image{
+        width: 90px;
+        border-radius: 16px;
+        &:hover{
+          cursor: pointer;
+          border: 2px solid variable.$Orange;
+          transform: translateY(-6px);
+          transition: 0.6s;
+        }
+    }
+    &_previus{
+        background-color: variable.$White;
+        width: 40px;
+        height: 40px;
+        padding: 12px;
+        border-radius: 50%;
+        position: absolute;
+        top: 370px;
+        left: 230px;
+        &:hover{
+          cursor: pointer;
+        }
+        @media (min-width:1440px){
+            top: 450px;
+            left: 350px;
+        }
+    }
+    &_next{
+        background-color: variable.$White;
+        width: 40px;
+        height: 40px;
+        padding: 12px;
+        border-radius: 50%;
+        position: absolute;
+        top: 370px;
+        right: 230px;
+        &:hover{
+          cursor: pointer;
+        }
+        @media (min-width:1440px){
+            top: 450px;
+            right: 350px;
+        }
+    }
+    &_close{
+        width: 16px;
+        padding-bottom: 40px;
+        &:hover{
+            cursor: pointer;
+            content: url(../images/icon-close-orange.svg);
+        }
+    } 
+    @media (min-width:1440px){
+        width: 600px;
+    }
+           
+}

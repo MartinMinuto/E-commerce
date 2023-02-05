@@ -1,0 +1,23 @@
+@use 'variable';
+
+.nav{
+    width: 400px;
+    &_iteams{
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+    }
+    &_link{
+        text-decoration: none;
+        color: variable.$Dark-grayish-blue;
+        display: block;
+        height: 112px;
+        padding-top: 42px;
+        &:hover{
+            border-bottom: 4px solid variable.$Orange;
+        }
+    }
+    @media (max-width:1023px){
+        display: none;
+    }
+} 

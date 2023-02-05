@@ -1,0 +1,41 @@
+@use 'variable';
+
+.modal{
+    &_background{
+        background-color: variable.$Black-modal;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 105%;
+        display: none;
+        z-index: 20;
+    }
+    &_nav{
+        background-color: variable.$White;
+        width: 250px;
+        padding: 28px 24px;
+        height: 100%;
+        display: block;
+        &_iteams{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 200px;
+          list-style: none;
+          margin-top: 60px;
+        }
+        &_link{
+            text-decoration: none;
+            color: variable.$Very-dark-blue;
+            font-weight: 700;
+            font-size: 1.2em;
+            &:hover{
+                border-bottom: 4px solid variable.$Orange;}
+        }
+    }
+    &_close:hover{
+        cursor: pointer;
+        color: variable.$Orange;
+    }
+}
