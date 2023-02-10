@@ -88,7 +88,7 @@ const modalImagen = document.querySelector('.modal_gallery_background');
 const closeModalImage = document.querySelector('.modal_gallery_close');
 
 imageContainer.addEventListener('click', ()=>{
-    if(window.innerWidth >= 1024,
+    if(window.innerWidth >= 1024 &&
         window.innerHeight >= 848){
     modalImagen.style.display = "grid";
     }
